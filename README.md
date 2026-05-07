@@ -26,3 +26,32 @@ then also included the KNN  for comparision accuracy.
 | ------------------- | ------------------------- |
 | Logistic Regression | Higher / Good baseline    |
 | KNN                 | Slightly lower or similar |
+
+
+ -I worked with the Wine dataset from sklearn. The main goal was to reduce the dimensionality of the data using PCA and t-SNE, then compare the results and model performance using Logistic Regression.
+ which  I loaded the dataset using sklearn.it contaoins different chemicals variaties.
+-i separeted the loadedt dataset using features and performed standardization on it.
+-using Pca to work on tje data
+PCA Analysis
+Explained Variance
+
+I plotted the cumulative explained variance to understand how many components I should keep.
+
+From the plot, I observed that most of the information is retained in the first few components. I decided to keep enough components that explain around 45% of the variance.
+
+Training Logistic Regression
+
+I trained a Logistic Regression model in two ways:
+
+On the original dataset
+On PCA-reduced data
+Comparison of Accuracy
+
+I found that:
+
+The original data gave higher accuracy
+The PCA data gave slightly lower but still good accuracy
+PCA reduced complexity while maintaining performance
+-went ahead and took a lok at it by visualizing it. The plot showed that some classes were separated, but there was still slight overlap between them
+-Using tsne to work on the data also so that i can compare the outome.
+I applied t-SNE with different perplexity values:
